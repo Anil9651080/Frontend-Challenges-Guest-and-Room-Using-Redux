@@ -1,0 +1,97 @@
+/* src/styles/RoomComponent.css */
+
+/* General container styling */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+}
+
+/* Heading styles */
+h1,
+h3 {
+    color: #333;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #666;
+}
+
+/* Adult and Children count sections */
+h1 span {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+h1 span button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: background-color 0.3s ease;
+}
+
+h1 span button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+h1 span button:hover:not(:disabled) {
+    background-color: #0056b3;
+}
+
+/* Button styling */
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 18px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    margin-top: 30px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Total sum styling */
+.total-sum {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 24px;
+    color: #ff6f61;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    h1,
+    h3 {
+        font-size: 20px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 8px 10px;
+    }
+}
